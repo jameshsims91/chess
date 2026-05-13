@@ -1,0 +1,94 @@
+--- !ruby/object:Game
+board: !ruby/object:Board
+  grid:
+  - - !ruby/object:King
+      color: :white
+      position:
+      - 0
+      - 0
+      has_moved: true
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - !ruby/object:Queen
+      color: :white
+      position:
+      - 1
+      - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - !ruby/object:Bishop
+      color: :white
+      position:
+      - 3
+      - 3
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - 
+    - !ruby/object:King
+      color: :black
+      position:
+      - 6
+      - 4
+      has_moved: true
+    - 
+    - 
+    - 
+  - - 
+    - 
+    - 
+    - !ruby/object:Rook
+      color: :white
+      position:
+      - 7
+      - 3
+    - 
+    - 
+    - 
+    - 
+player_white: &1 !ruby/object:HumanPlayer
+  color: :white
+player_black: !ruby/object:ComputerPlayer
+  color: :black
+current_player: *1
